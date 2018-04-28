@@ -8,8 +8,9 @@ app = flask.Flask(__name__)
 @app.route('/apunteswaw', methods=['POST'])
 def respuesta():
 	data = flask.request.data
-	s.sendto(1, ('<broadcast>', 8090))
-
+	s.sendto(b'1', ('127.0.0.1', 8090))
+	print('Enviado')
+	return 'Listo'
 @app.route('/mandaimg', methods=['GET'])
 def mandar():
 	pass
