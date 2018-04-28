@@ -1,2 +1,2 @@
 Flask==0.12.2
-socket==18.1.
+socket==18.1.0
