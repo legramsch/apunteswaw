@@ -10,7 +10,7 @@ def respuesta():
 	data = flask.request.data
 	s.sendto(b'1', ('127.0.0.1', 8090))
 	print('Enviado')
-	return 'Listo'
+	return '<h1>Titulo</h1>'
 @app.route('/mandaimg', methods=['GET'])
 def mandar():
 	pass
