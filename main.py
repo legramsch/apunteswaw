@@ -11,8 +11,9 @@ def respuesta():
 #	s.sendto(b'1', ('127.0.0.1', 8090))
 	print('Enviado')
 	return '<h1>Titulo</h1>'
+
 @app.route('/mandaimg', methods=['GET'])
 def mandar():
-	pass
+	return '<h1> titulo </h1>'
 
 app.run(port=8080)
